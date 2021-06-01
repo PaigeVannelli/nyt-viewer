@@ -12,13 +12,9 @@ const App = () => {
   const [searchedArticles, setSearchedArticles] = useState([])
 
   useEffect(() => {
-    console.log("test")
     if (searchTerm) {
       getAllArticles(searchTerm)
-        .then(data => {
-          console.log(data)
-          setSearchedArticles(data)
-        })
+        .then(data => setSearchedArticles(data.results))
     }
   }, [searchTerm])
 

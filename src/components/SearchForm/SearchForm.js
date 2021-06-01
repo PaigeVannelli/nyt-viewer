@@ -1,7 +1,7 @@
 const SearchForm = ({ setSearchTerm }) => {
   return(
     <form>
-      <label for="Topics">Browse Articles By Topic: </label>
+      <label htmlFor="Topics">Browse Articles By Topic: </label>
       <select id="cars" name="cars" onChange={event => setSearchTerm(event.target.value)}>
         <option value='arts'>Arts</option>
         <option value='automobiles'>Automobiles</option>
