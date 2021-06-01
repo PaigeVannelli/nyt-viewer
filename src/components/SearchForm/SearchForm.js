@@ -28,7 +28,6 @@ const SearchForm = ({ setSearchTerm }) => {
         <option value='us'>US</option>
         <option value='world'>World</option>
       </select>
-      
     </form>
   )
 }
