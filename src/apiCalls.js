@@ -1,7 +1,6 @@
-require('dotenv').config()
-
 export const getAllArticles = (searchTerm) => {
-  return fetch(`https://api.nytimes.com/svc/topstories/v2/${searchTerm}.json?api-key=HO3AUxbXRQMVIFSnaIMUSynEt6qPI2OH`)
+  console.log(process.env.REACT_APP_NYT_KEY)
+  return fetch(`https://api.nytimes.com/svc/topstories/v2/${searchTerm}.json?api-key=${process.env.REACT_APP_NYT_KEY}`)
     .then(response => response.json())
     .then(data => console.log(data))
 }
