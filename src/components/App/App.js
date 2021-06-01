@@ -1,7 +1,11 @@
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const App = () => {
+
+  const [searchTerm, setSearchTerm] = useState('')
+  
   return (
     <div className="App">
       {/* <BrowserRouter> */}
