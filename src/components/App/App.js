@@ -9,12 +9,18 @@ require('dotenv').config()
 const App = () => {
 
   const [searchTerm, setSearchTerm] = useState('')
+  const [searchedArticles, setSearchedArticles] = useState([])
 
   useEffect(() => {
+    console.log("test")
     if (searchTerm) {
       getAllArticles(searchTerm)
+        .then(data => {
+          console.log(data)
+          setSearchedArticles(data)
+        })
     }
-  })
+  }, [searchTerm])
 
   return (
     <div className="App">
