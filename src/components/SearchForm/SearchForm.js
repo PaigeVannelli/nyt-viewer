@@ -1,8 +1,8 @@
-const SearchForm = () => {
+const SearchForm = ({ setSearchTerm }) => {
   return(
     <form>
-      <label for="cars">Choose a car:</label>
-      <select id="cars" name="cars">
+      <label for="Topics">Browse Articles By Topic: </label>
+      <select id="cars" name="cars" onChange={event => setSearchTerm(event.target.value)}>
         <option value='arts'>Arts</option>
         <option value='automobiles'>Automobiles</option>
         <option value='books'>Books</option>
@@ -28,6 +28,9 @@ const SearchForm = () => {
         <option value='us'>US</option>
         <option value='world'>World</option>
       </select>
+      
     </form>
   )
 }
+
+export default SearchForm

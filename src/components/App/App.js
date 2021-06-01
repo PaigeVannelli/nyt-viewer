@@ -1,18 +1,21 @@
+import './App.css';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import LandingPage from '../LandingPage/LandingPage';
+import DetailedArticle from '../DetailedArticle/DetailedArticle';
 
 const App = () => {
 
   const [searchTerm, setSearchTerm] = useState('')
   
+
   return (
     <div className="App">
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
         <Switch>
           <Route 
             exact path='/'
-            render={() => <LandingPage />}
+            render={() => <LandingPage setSearchTerm={setSearchTerm}/>}
           />
           <Route 
             exact path='/:id'
@@ -22,7 +25,7 @@ const App = () => {
             render={() => <Redirect to="/" />} 
           />
         </Switch>
-      {/* </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   );
 }
