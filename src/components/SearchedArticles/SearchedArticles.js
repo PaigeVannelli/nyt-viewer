@@ -1,5 +1,14 @@
-const SearchedArticles = () => {
-  return(
+const SearchedArticles = ({ searchedArticles }) => {
+
+  if (searchedArticles) {
+    const articles = searchedArticles.map((article, index) => {
+      return (
+
+      )
+    })
+  }
+
+  return (
     <div>
       
     </div>

@@ -1,11 +1,11 @@
 import SearchForm from '../SearchForm/SearchForm';
 import SearchedArticles from '../SearchedArticles/SearchedArticles';
 
-const LandingPage = ({ setSearchTerm }) => {
-  return(
+const LandingPage = ({ setSearchTerm, searchedArticles }) => {
+  return (
     <div>
       <SearchForm setSearchTerm={setSearchTerm}/>
-      <SearchedArticles />
+      <SearchedArticles searchedArticles={searchedArticles}/>
     </div>
   )
 }
