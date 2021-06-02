@@ -10,6 +10,7 @@ const App = () => {
 
   const [searchTerm, setSearchTerm] = useState('')
   const [searchedArticles, setSearchedArticles] = useState([])
+  const [currentArticle, setCurrentArticle] = useState({})
 
   useEffect(() => {
     if (searchTerm) {
@@ -18,13 +19,18 @@ const App = () => {
     }
   }, [searchTerm])
 
+  // const showCurrentArticle = (articleDetails) => {
+  //   setCurrentArticle(articleDetails)
+  
+  // }
+
   return (
     <div className="App">
       <BrowserRouter>
         <Switch>
           <Route 
             exact path='/'
-            render={() => <LandingPage setSearchTerm={setSearchTerm} searchedArticles={searchedArticles}/>}
+            render={() => <LandingPage setSearchTerm={setSearchTerm} searchedArticles={searchedArticles} setCurrentArticle={setCurrentArticle}/>}
           />
           <Route 
             exact path='/:id'

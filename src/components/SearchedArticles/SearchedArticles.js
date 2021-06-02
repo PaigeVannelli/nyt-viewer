@@ -1,6 +1,6 @@
 import ArticleOverview from '../ArticleOverview/ArticleOverview'
 
-const SearchedArticles = ({ searchedArticles }) => {
+const SearchedArticles = ({ searchedArticles, setCurrentArticle }) => {
   let articles
   let background
   let thumbnail
@@ -26,6 +26,7 @@ const SearchedArticles = ({ searchedArticles }) => {
           date={article.published_date}
           background={background[0].url}
           thumbnail={thumbnail[0].url}
+          setCurrentArticle={setCurrentArticle}
         />
       )
     })
