@@ -24,12 +24,7 @@ const App = () => {
         <Switch>
           <Route 
             exact path='/'
-            render={() => {
-              <LandingPage 
-                setSearchTerm={setSearchTerm} 
-                searchedArticles={searchedArticles}
-              />
-            }}
+            render={() => <LandingPage setSearchTerm={setSearchTerm} searchedArticles={searchedArticles}/>}
           />
           <Route 
             exact path='/:id'
