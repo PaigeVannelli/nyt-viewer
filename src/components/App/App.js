@@ -33,8 +33,8 @@ const App = () => {
             render={() => <LandingPage setSearchTerm={setSearchTerm} searchedArticles={searchedArticles} setCurrentArticle={setCurrentArticle}/>}
           />
           <Route 
-            exact path='/:id'
-            render={() => <DetailedArticle />}
+            exact path='/article'
+            render={() => <DetailedArticle currentArticle={currentArticle}/>}
           />
           <Route 
             render={() => <Redirect to="/" />} 
