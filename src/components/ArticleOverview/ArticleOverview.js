@@ -12,7 +12,6 @@ const ArticleOverview = (props) => {
         backgroundSize: 'cover',
       }}
     >
-      {/* <img src={props.thumbnail} alt={props.title} className='thumbnail'/> */}
       <div className='details'>
         <p>{props.title}</p>
         <p>{props.byline}</p>

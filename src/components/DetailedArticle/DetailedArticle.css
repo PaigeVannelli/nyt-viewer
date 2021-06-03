@@ -1,4 +1,4 @@
-.article-details {
+.article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,4 +6,23 @@
   justify-self: center;
   height: 100vh;
   margin: 0 60px 0 60px;
+  background-image: .5;
+}
+
+.article-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  height: 350px;
+  width: 450px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10%;
+  color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
 }
