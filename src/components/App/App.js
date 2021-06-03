@@ -8,7 +8,7 @@ require('dotenv').config()
 
 const App = () => {
 
-  const [searchTerm, setSearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState('arts')
   const [searchedArticles, setSearchedArticles] = useState([])
   const [currentArticle, setCurrentArticle] = useState({})
 
@@ -18,11 +18,6 @@ const App = () => {
         .then(data => setSearchedArticles(data.results))
     }
   }, [searchTerm])
-
-  // const showCurrentArticle = (articleDetails) => {
-  //   setCurrentArticle(articleDetails)
-  
-  // }
 
   return (
     <div className="App">
