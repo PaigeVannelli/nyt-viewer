@@ -1,4 +1,5 @@
-import ArticleOverview from '../ArticleOverview/ArticleOverview'
+import ArticleOverview from '../ArticleOverview/ArticleOverview';
+import './SearchedArticles.css'
 
 const SearchedArticles = ({ searchedArticles, setCurrentArticle }) => {
   let articles

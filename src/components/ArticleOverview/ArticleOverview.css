@@ -1,7 +1,13 @@
 .article-overview {
-  border: solid grey 2px;
-  height: 100px;
-  width: 400px;
+  border: solid grey 1px;
+  height: 120px;
+  width: 370px;
   display: flex;
   flex-direction: row;
+  margin: 20px;
+}
+
+.thumbnail {
+  height: 120px;
+  width: auto;
 }

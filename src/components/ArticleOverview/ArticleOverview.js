@@ -5,7 +5,7 @@ import './ArticleOverview.css'
 const ArticleOverview = (props) => {
   return (
     <Link to='/article' onClick={() => props.setCurrentArticle(props)} className='article-overview'>
-      <img src={props.thumbnail} />
+      <img src={props.thumbnail} alt={props.title} className='thumbnail'/>
       <div>
         <p>{props.title}</p>
         <p>{props.byline}</p>
