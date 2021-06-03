@@ -1,7 +1,9 @@
+import './SearchForm.css'
+
 const SearchForm = ({ setSearchTerm }) => {
   return (
-    <form>
-      <label htmlFor="Topics">Browse Articles By Topic: </label>
+    <form className='search-bar'>
+      <label htmlFor="Topics" className='search-title'>Browse Articles By Topic: </label>
       <select id="cars" name="cars" onChange={event => setSearchTerm(event.target.value)}>
         <option value='arts'>Arts</option>
         <option value='automobiles'>Automobiles</option>

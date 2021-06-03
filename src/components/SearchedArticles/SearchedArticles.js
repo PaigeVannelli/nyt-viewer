@@ -1,9 +1,11 @@
-import ArticleOverview from '../ArticleOverview/ArticleOverview'
+import ArticleOverview from '../ArticleOverview/ArticleOverview';
+import './SearchedArticles.css'
 
 const SearchedArticles = ({ searchedArticles, setCurrentArticle }) => {
   let articles
   let background
   let thumbnail
+  let threeByTwo
 
   if (searchedArticles) {
     articles = searchedArticles.map((article, index) => {
@@ -13,6 +15,9 @@ const SearchedArticles = ({ searchedArticles, setCurrentArticle }) => {
         })
         thumbnail = article.multimedia?.filter(photo => {
           return photo.format === 'Standard Thumbnail'
+        })
+        threeByTwo = article.multimedia?.filter(photo => {
+          return photo.format === 'mediumThreeByTwo210'
         })
       }
 
@@ -26,6 +31,7 @@ const SearchedArticles = ({ searchedArticles, setCurrentArticle }) => {
           date={article.published_date}
           background={background[0].url}
           thumbnail={thumbnail[0].url}
+          threeByTwo={threeByTwo[0].url}
           setCurrentArticle={setCurrentArticle}
         />
       )
