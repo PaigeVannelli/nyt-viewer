@@ -9,6 +9,7 @@ const DetailedArticle = ({ currentArticle }) => {
           <p>{currentArticle.abstract}</p>
           <p>{currentArticle.date}</p>
         </div>
+        <a href={currentArticle.url}>Click Here for Full Article</a>
       </article>
     </div>
   )
