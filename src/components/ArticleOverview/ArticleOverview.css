@@ -5,9 +5,15 @@
   display: flex;
   flex-direction: row;
   margin: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .thumbnail {
   height: 120px;
   width: auto;
+}
+
+.details {
+  padding: 10px;
 }
