@@ -9,12 +9,13 @@
   color: black;
   border-radius: 7%;
 }
-/* 
-.thumbnail {
-  height: 120px;
-  width: auto;
-} */
 
 .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
