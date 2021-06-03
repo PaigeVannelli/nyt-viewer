@@ -1,18 +1,19 @@
 .article-overview {
   border: solid grey 1px;
-  height: 120px;
-  width: 370px;
+  height: 250px;
+  width: 250px;
   display: flex;
   flex-direction: row;
   margin: 20px;
   text-decoration: none;
   color: black;
+  border-radius: 7%;
 }
-
+/* 
 .thumbnail {
   height: 120px;
   width: auto;
-}
+} */
 
 .details {
   padding: 10px;
