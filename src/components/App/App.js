@@ -8,8 +8,9 @@ require('dotenv').config()
 
 const App = () => {
 
-  const [searchTerm, setSearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState('arts')
   const [searchedArticles, setSearchedArticles] = useState([])
+  const [currentArticle, setCurrentArticle] = useState({})
 
   useEffect(() => {
     if (searchTerm) {
@@ -24,11 +25,11 @@ const App = () => {
         <Switch>
           <Route 
             exact path='/'
-            render={() => <LandingPage setSearchTerm={setSearchTerm}/>}
+            render={() => <LandingPage setSearchTerm={setSearchTerm} searchedArticles={searchedArticles} setCurrentArticle={setCurrentArticle}/>}
           />
           <Route 
-            exact path='/:id'
-            render={() => <DetailedArticle />}
+            exact path='/article'
+            render={() => <DetailedArticle currentArticle={currentArticle}/>}
           />
           <Route 
             render={() => <Redirect to="/" />} 

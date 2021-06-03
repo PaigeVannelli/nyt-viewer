@@ -1,5 +1,5 @@
 const SearchForm = ({ setSearchTerm }) => {
-  return(
+  return (
     <form>
       <label htmlFor="Topics">Browse Articles By Topic: </label>
       <select id="cars" name="cars" onChange={event => setSearchTerm(event.target.value)}>
