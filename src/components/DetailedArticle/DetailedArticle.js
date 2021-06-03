@@ -1,7 +1,9 @@
+import './DetailedArticle.css'
+
 const DetailedArticle = ({ currentArticle }) => {
   return (
     <div>
-      <article >
+      <article className='article-details'>
         <img src={currentArticle.thumbnail} />
         <div>
           <h1>{currentArticle.title}</h1>
