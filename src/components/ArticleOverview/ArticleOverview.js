@@ -5,7 +5,6 @@ const ArticleOverview = (props) => {
   return (
     <Link 
       to={`/${props.id}`} 
-      onClick={() => props.setCurrentArticle(props)} 
       className='article-overview' 
       style={{
         backgroundImage: `url(${props.photo})`,
