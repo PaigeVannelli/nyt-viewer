@@ -8,7 +8,7 @@ const ArticleOverview = (props) => {
       onClick={() => props.setCurrentArticle(props)} 
       className='article-overview' 
       style={{
-        backgroundImage: `url(${props.threeByTwo})`,
+        backgroundImage: `url(${props.photo})`,
         backgroundSize: 'cover',
       }}
     >

@@ -6,7 +6,7 @@ const DetailedArticle = ({ currentArticle }) => {
       <article 
         className='article' 
         style={{
-          backgroundImage: `url(${currentArticle.background})`,
+          backgroundImage: `url(${currentArticle.photo})`,
           backgroundSize: 'cover',
         }}>
         <div className='article-details'>

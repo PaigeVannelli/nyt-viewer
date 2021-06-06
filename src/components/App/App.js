@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import LandingPage from '../LandingPage/LandingPage';
 import DetailedArticle from '../DetailedArticle/DetailedArticle';
 import { getAllArticles } from '../../apiCalls';
+import { dataCleaner } from '../../helperFunctions'
 require('dotenv').config()
 
 const App = () => {
@@ -15,7 +16,11 @@ const App = () => {
   useEffect(() => {
     if (searchTerm) {
       getAllArticles(searchTerm)
-        .then(data => setSearchedArticles(data.results))
+        .then(data => {
+          // console.log(data)
+          let cleanedData = dataCleaner(data)
+          setSearchedArticles(cleanedData)
+        })
     }
   }, [searchTerm])
 
