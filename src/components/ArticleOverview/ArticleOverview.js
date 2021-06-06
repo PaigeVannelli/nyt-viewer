@@ -4,13 +4,14 @@ import './ArticleOverview.css'
 const ArticleOverview = (props) => {
   return (
     <Link 
-      to='/article' 
+      to={`/${props.id}`} 
       onClick={() => props.setCurrentArticle(props)} 
       className='article-overview' 
       style={{
         backgroundImage: `url(${props.photo})`,
         backgroundSize: 'cover',
       }}
+      alt={props.photoCaption}
     >
       <div className='details'>
         <p>{props.title}</p>

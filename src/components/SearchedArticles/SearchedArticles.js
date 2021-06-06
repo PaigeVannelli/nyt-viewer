@@ -23,13 +23,15 @@ const SearchedArticles = ({ searchedArticles, setCurrentArticle }) => {
 
       return (
         <ArticleOverview 
-          key={index}
+          // key={index}
+          key={article.id}
           title={article.title}
-          abstract={article.abstract}
-          url={article.url}
+          // abstract={article.abstract}
+          // url={article.url}
           byline={article.byline}
-          date={article.publishedDate}
+          // date={article.publishedDate}
           photo={article.photo}
+          photoCaption={article.photoCaption}
           // thumbnail={thumbnail[0].url}
           // threeByTwo={threeByTwo[0].url}
           setCurrentArticle={setCurrentArticle}
