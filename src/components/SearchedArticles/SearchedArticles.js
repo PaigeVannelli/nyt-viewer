@@ -8,7 +8,7 @@ const SearchedArticles = ({ searchedArticles, setCurrentArticle }) => {
   // let threeByTwo
 
   if (searchedArticles) {
-    articles = searchedArticles.map((article, index) => {
+    articles = searchedArticles.map(article => {
       // if (article.multimedia) {
       //   background = article.multimedia?.filter(photo => {
       //     return photo.format === 'superJumbo'
@@ -24,7 +24,7 @@ const SearchedArticles = ({ searchedArticles, setCurrentArticle }) => {
       return (
         <ArticleOverview 
           // key={index}
-          key={article.id}
+          id={article.id}
           title={article.title}
           // abstract={article.abstract}
           // url={article.url}
