@@ -7,9 +7,11 @@ export const dataCleaner = (data) => {
     cleanedArticle.publishedDate = article.published_date
     cleanedArticle.url = article.url
     cleanedArticle.title = article.title
-    cleanedArticle.photo = article.multimedia[4].url
-    cleanedArticle.background = article.multimedia[0].url
-    cleanedArticle.photoCaption = article.multimedia[4].caption
+    if (article.multimedia?.length >= 4) {
+      cleanedArticle.photo = article.multimedia[4].url
+      cleanedArticle.photoCaption = article.multimedia[4].caption
+      cleanedArticle.background = article.multimedia[0].url
+    }
     return cleanedArticle
   })
   return cleanedData

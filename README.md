@@ -44,21 +44,19 @@ NYT Viewer is a news viewing application that allows users to look through selec
 
 #### Main Page
   -  When a user visits the site they are automatically shown all of the top art stories for the day provided by the New York Times. Users will see widgets with the article main photo, title and byline.
-<!-- 
-<p align="center">
-  <img src="https://media.giphy.com/media/nqHB70AE5wpVR9o9C8/giphy.gif">
-</p>
- -->
 #### Searching
   - Users can then use the search bar at the top of the main page to sort through different topics. When a user selects a new topic they are automaically shown all of those topics top stories for that day related to the category they searched. 
  
-<!-- <p align="center">
-  <img alt="giph of matched rides and user profile" src="https://media.giphy.com/media/9wjRWY2FySyyvDEyXo/giphy.gif">
-</p> -->
+<p align="center">
+  <img alt="filtering through articles" src="./src/assets/filter.gif">
+</p>
 
 #### Article Details
   - If a user whats to learn more about a particular article they can click on any of the widgets to be taken to an article details page. Users are then shown details abut the article including title, author, abstract and date published. They are then able to click on a link which takes them to the complete published article on the New York Times site. 
 
+<p align="center">
+  <img alt="filtering through articles" src="./src/assets/details.gif">
+</p>
 
 ## Learning Goals
 
